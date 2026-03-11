@@ -71,6 +71,11 @@ p.quote {
 	-webkit-hyphenate-limit-lines: 2;
 	hyphenate-limit-lines: 2;}
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 div.image {
 margin: 5em auto 0 auto; text-align: center;max-width: 30%; 
 }
