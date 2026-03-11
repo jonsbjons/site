@@ -1,0 +1,76 @@
+@font-face {
+	font-family: "OldStandard";
+	font-style: normal;
+	font-weight: normal;
+	src:url(../Fonts/OldStandard-Regular.otf);
+}
+
+@font-face {
+	font-family: "OldStandard";
+	font-style: normal;
+	font-weight: bold;
+	src:url(../Fonts/OldStandard-Bold.otf);
+}
+
+body {
+	margin: 1%;
+	text-align: left;
+	font-size: medium;
+	line-height: 1.4;
+	-epub-hyphens:auto;
+}
+
+body * {
+  line-height: inherit;
+}
+
+img {max-width:99%;}
+
+h1,h2,h3,h4 {
+	font-family: "OldStandard";
+	text-align: center;
+}
+
+p {
+	font-family: "OldStandard";
+	text-align: justify;
+	text-indent: 5%;
+	margin: 0;
+	widows:2;
+	orphans:2;
+	-epub-hyphens:auto;
+	-webkit-hyphens: auto !important;
+	adobe-hyphenate: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	-webkit-hyphenate-limit-before: 3;
+	-webkit-hyphenate-limit-after: 2;
+	-ms-hyphenate-limit-chars: 6 3 2;
+	hyphenate-limit-chars: 6 3 2;
+	-webkit-hyphenate-limit-lines: 2;
+	hyphenate-limit-lines: 2;
+}
+
+h4 + p {
+	text-indent:0;
+	page-break-before:avoid;
+}
+
+p.quote {
+	text-indent:0;
+	text-align: center;
+-epub-hyphens:auto;
+	-webkit-hyphens: auto !important;
+	adobe-hyphenate: auto;
+	-moz-hyphens: auto;
+	hyphens: auto;
+	-webkit-hyphenate-limit-before: 3;
+	-webkit-hyphenate-limit-after: 2;
+	-ms-hyphenate-limit-chars: 6 3 2;
+	hyphenate-limit-chars: 6 3 2;
+	-webkit-hyphenate-limit-lines: 2;
+	hyphenate-limit-lines: 2;}
+
+div.image {
+margin: 5em auto 0 auto; text-align: center;max-width: 30%; 
+}
