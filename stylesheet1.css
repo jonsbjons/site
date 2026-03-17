@@ -1,81 +1,75 @@
 @font-face {
-	font-family: "OldStandard";
-	font-style: normal;
-	font-weight: normal;
-	src:url(../Fonts/OldStandard-Regular.otf);
+    font-family: "OldStandard";
+    font-style: normal;
+    font-weight: normal;
+    src: url(../Fonts/OldStandard-Regular.otf);
 }
 
 @font-face {
-	font-family: "OldStandard";
-	font-style: normal;
-	font-weight: bold;
-	src:url(../Fonts/OldStandard-Bold.otf);
+    font-family: "OldStandard";
+    font-style: normal;
+    font-weight: bold;
+    src: url(../Fonts/OldStandard-Bold.otf);
 }
 
 body {
-	margin: 1%;
-	text-align: left;
-	font-size: medium;
-	line-height: 1.4;
-	-epub-hyphens:auto;
+    margin: 1%;
+    text-align: left;
+    font-size: medium;
+    line-height: 1.4;
+   
 }
 
 body * {
-  line-height: inherit;
+    line-height: inherit;
 }
 
-img {max-width:99%;}
-
-h1,h2,h3,h4 {
-	font-family: "OldStandard";
-	text-align: center;
+h1, h2, h3, h4 {
+    font-family: "OldStandard";
+    text-align: center;
 }
 
 p {
-	font-family: "OldStandard";
-	text-align: justify;
-	text-indent: 5%;
-	margin: 0;
-	widows:2;
-	orphans:2;
-	-epub-hyphens:auto;
-	-webkit-hyphens: auto !important;
-	adobe-hyphenate: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-	-webkit-hyphenate-limit-before: 3;
-	-webkit-hyphenate-limit-after: 2;
-	-ms-hyphenate-limit-chars: 6 3 2;
-	hyphenate-limit-chars: 6 3 2;
-	-webkit-hyphenate-limit-lines: 2;
-	hyphenate-limit-lines: 2;
+    font-family: "OldStandard";
+    text-align: justify;
+    text-indent: 5%;
+    margin: 0 0 1em 0;
+    widows: 2;
+    orphans: 2;
+    -epub-hyphens: auto;
+    -webkit-hyphens: auto !important;
+    -moz-hyphens: auto;
+    hyphens: auto;
+    -webkit-hyphenate-limit-before: 3;
+    -webkit-hyphenate-limit-after: 2;
+    -ms-hyphenate-limit-chars: 6 3 2;
+    hyphenate-limit-chars: 6 3 2;
+  
 }
-
 h4 + p {
-	text-indent:0;
-	page-break-before:avoid;
+    text-indent: 0;
+    page-break-before: avoid;
 }
 
-p.quote {
-	text-indent:0;
-	text-align: center;
--epub-hyphens:auto;
-	-webkit-hyphens: auto !important;
-	adobe-hyphenate: auto;
-	-moz-hyphens: auto;
-	hyphens: auto;
-	-webkit-hyphenate-limit-before: 3;
-	-webkit-hyphenate-limit-after: 2;
-	-ms-hyphenate-limit-chars: 6 3 2;
-	hyphenate-limit-chars: 6 3 2;
-	-webkit-hyphenate-limit-lines: 2;
-	hyphenate-limit-lines: 2;}
-
+/* Картинки с обтеканием текста */
 img {
-  max-width: 100%;
-  height: auto;
+    max-width: 600px;
+    width: 40%; /* ширина для обтекания текста */
+    height: auto;
+    float: left; /* текст обтекает слева */
+    margin: 0 1em 1em 0; /* отступ справа и снизу */
+}
+
+/* Если нужно, картинка справа */
+img.right {
+    float: right;
+    margin: 0 0 1em 1em; /* отступ слева и снизу */
 }
 
 div.image {
-margin: 5em auto 0 auto; text-align: center;max-width: 30%; 
+    clear: both;
+    text-align: center;
+    margin: 2em auto;
+    max-width: 30%;
+
 }
